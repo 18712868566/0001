@@ -1,0 +1,140 @@
+/*导入字体*/
+/*@font-face {
+	font-family: zongyi;
+	src: url(../font/ll.ttf);
+}
+@font-face {
+	font-family: liliang;
+	src: url(../font/zy.ttf);
+}*/
+@font-face {
+	font-family: FZ;
+	src: url(../font/FZZYJT.ttf);
+}
+@charset "utf-8";
+/* CSS Document wlo:Cflower */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { border:0 none; font:inherit; margin:0; padding:0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block;}
+ol, ul { list-style:outside none none;}
+blockquote, q { quotes:none;}
+blockquote::before, blockquote::after, q::before, q::after { content:none;}
+table { border-collapse:collapse; border-spacing:0;}
+*{ box-sizing:border-box; outline:0 none; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+input, textarea { border-radius:0; outline:0 none; resize:none; -webkit-appearance: none;/*去掉iOS下input的默认内阴影*/}
+.clearfix:after,.clearfloat:after {visibility:hidden;display:block;font-size:0;content:"";clear:both;height:0;}
+html{ font-family:"Heiti SC",Helvetica,"Microsoft YaHei",sans-serif; -webkit-text-size-adjust:none;}
+body{ margin:0 auto; min-width:320px; position:relative; width:100%; height:100%;}
+a{ text-decoration:none; color:inherit;}
+.clearfloat:after{clear: both;content:""; display: block; height: 0; visibility: hidden;}
+.ridius{border-radius: 5px;}
+/*弹出层遮罩div*/
+.black_overlay{	display: none;	position: absolute;	top: 0%;left: 0%;width: 100%;height: 100%;background-color: #000;	z-index:988;	-moz-opacity: 0.5;	opacity:.50;	filter: alpha(opacity=50);	}
+
+html, body { position: relative;height: 100%;overflow: hidden;}
+body {background: #eee;font-family: Helvetica Neue, Helvetica, Arial, sans-serif;font-size: 14px;color:#000;padding: 0;max-width: 750px;margin:0 auto;}
+.btn{display: block;}
+.pos{position: absolute;}
+
+.swiper-container {width: 100%;height: 100%;}
+.swiper-slide {text-align: center;font-size: .18rem;background: #fff;display: flex;justify-content: center;align-items: center;/* Center slide text vertically */}
+
+.pages{position: relative;background: url(../images/bg.jpg) no-repeat center 0;background-size: 100% 100%;}
+.page1{width: 100%;height: 100%;}
+.page2{width: 100%;height: 100%;}
+.page4{width: 100%;height: 100%;background: url(../images/page4_bg.jpg) no-repeat center 0;background-size: 100% 100%;}
+
+
+/*page1*/
+.pages p img{width: 100%;height: 100%;}
+
+.hometit{width: 2.65rem;height: 1.6rem;margin: .3rem auto;position: absolute;top: 0;left: 0;z-index: 99;}
+.hometit .logo,.hometit img{z-index: 99;}
+.hometit img{width: 100%;}
+
+.favor{z-index: 1;width:1.07rem;height: 0.59rem;background: url(../images/btn.png) no-repeat 0 0;background-size: 100% 100%;right: 0.37rem;top: 0.57rem;}
+.favor .icon{top: 50%;margin-top: -0.16rem;left: 0.2rem}
+.favor .icon img{max-width: 0.3rem;}
+
+
+.tab_list{width: 100%;height: 3.82rem;background: url(../images/list_bg.png) no-repeat;background-size: 100% 100%;z-index: 99999;bottom: 0;}
+.tab_list ul{ width: 85%;margin: 0 auto;
+        display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;}
+.tab_list ul li{width: 1.06rem;height: 2.31rem;margin: 0 0.1rem;}
+.tab_list ul li.active{background: url(../images/active.png) no-repeat;background-size: 1.06rem 2.31rem;background-position: -0.05rem 0; }
+
+
+.tab_list ul li p{ width: 0.99rem;height: 1.92rem;background:  url(../images/tab_list.png) no-repeat 0 0; background-size: 6.35rem 2.28rem;text-indent: -999em;float: right;margin-top: 0.25rem;}
+
+.tab_list ul li.list1{margin-top: 1rem;}
+.tab_list ul li.list2{margin-top: 1.4rem;}
+.tab_list ul li.list3{margin-top: 1.5rem;}
+.tab_list ul li.list4{margin-top: 1rem;}
+
+.tab_list ul li.list1 p{background-position: 0 0;}
+.tab_list ul li.list2 p{background-position: -1.8rem 0;}
+.tab_list ul li.list3 p{background-position: -3.6rem 0;}
+.tab_list ul li.list4 p{background-position: -5.4rem 0;}
+
+.video_wrap{top: 0;left: 0;width: 100%;height: 100%;z-index: 0;}
+.video{width: 100%;}
+
+
+
+/*page2*/
+.page2_bg img{width: 100%;}
+
+/* page3 */
+.swiper-container-h .swiper-slide{background: none;}
+.new_width{width: 5.23rem;height: 6.47rem;background: red;position: absolute;top: 50%;left: 50%;margin-left: -2.61rem;margin-top: -4.3rem;background: url(../images/swp_item.png) no-repeat;background-size: 100% 100%;}
+.swiper-button-prev{background: url(../images/prev.png) no-repeat;width: 0.56rem;height: 1.08rem;background-size: 100% 100%;margin-top: -100px;}
+.swiper-button-next{background: url(../images/next.png) no-repeat;width: 0.56rem;height: 1.08rem;background-size: 100% 100%;margin-top: -100px;}
+.pic_can{background: #092d5f;position: absolute;top: 10px;left: 10px;right: 10px;bottom: 10px;border: 1px solid #3368a8;}
+.pic_img{width: 4.66rem;height: 3.4rem;margin: 0.1rem auto 0.25rem;}
+.pic_img img,.pic_tit1 img{width: 100%;}
+.pic_tit1 {width: 1.7rem;height: 0.47rem;margin: 0 auto;}
+.ttxx{width: 92%;margin: 10px auto;font-size: 0.22rem;color: #b6cbff;text-align: left;}
+.info_more{width: 2.36rem;height: 0.54rem;margin: 0 auto;background: #06234b;font-size: 0.22rem;color: #b6cbff;line-height: 0.54rem;text-align: center;}
+/* page4 */
+.tit4{width: 2.76rem;height: 3.17rem;position: absolute;top: 50%;left: 50%;margin-left: -1.38rem;margin-top: -2.8rem;}
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
